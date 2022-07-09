@@ -1,5 +1,6 @@
 // Require API Routes folder
 const apiRoutes = require('./routes/apiRoutes');
+
 // import mySQL
 // const mysql = require('mysql2'); (moved to connection.js)
 // require connection.js
@@ -13,7 +14,7 @@ const PORT = process.env.PORT || 3001;
 const app = express(); 
 
 // import inputCheck module
-// const inputCheck = require('./utils/inputCheck');
+const inputCheck = require('./utils/inputCheck');
 
 // express middleware
 app.use(express.urlencoded({ extended: false })); 
